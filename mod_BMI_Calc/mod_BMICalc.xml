@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>BMI Calculator</name>
+	<author>Theo van der Sluijs</author>
+	<creationDate>November 2009</creationDate>
+	<copyright>(C) 2008 Theo van der Sluijs / IamboredsoIblog.eu</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@IamboredsoIblog.eu</authorEmail>
+	<authorUrl>www.IamboredsoIblog.eu</authorUrl>
+	<version>1.5.4</version>
+	<description>A nice Javascript driven BMI Calculator</description>
+	<files>
+		<filename module="mod_BMICalc">mod_BMICalc.php</filename>
+		<filename>mod_BMICalc.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/style.css</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_BMICalc.ini</language>
+    </languages>	
+	<params>
+	</params>
+</install>

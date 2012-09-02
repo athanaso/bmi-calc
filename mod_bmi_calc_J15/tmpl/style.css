@@ -1,0 +1,80 @@
+.btnCalc {
+	width:100%;
+}
+.rowCalc {
+	clear:both;
+	width:100%;
+}
+.rightColCalc {
+	float:left;
+}
+.middleColCalc {
+	float:left;
+	text-align:right
+}
+.leftColCalc {
+	width:50px;
+	float:left;
+}
+.btnCalc {
+	width:100%;
+	text-align:left;
+	clear:both;
+}
+
+
+/*for graph*/
+#bmi_calculator{
+	padding-top:15px;
+	height:400px;	/* Height of entire calculator */
+	margin: auto;
+}
+#bmi_calculator .calculator_graph{
+	width:175px;	/* Width of graph div */
+	float:left;	/* Position bar graph at the left */		
+	background-color:#DDD;	/* Light gray background color */
+	border:1px solid #555;	/* Gray border around graph */
+	height:100%;
+	position:relative;
+}
+
+.calculator_graph .graphLabels{	/* Help labels at the top of the graph */
+	background-color:#FFF;	/* White bg */
+	padding:3px;	/* Some air */
+	margin:2px;	/* Around around help div */
+	border:1px solid #555;	/* Gray border */
+	height: 67px;
+}
+.graphLabels .square{	/* Small square showing BMI, e.g.: Below 18.5: Underweight */
+	height:12px;	/* Width of square */
+	width:12px;	/* Height of square */
+	border:1px solid #000;	/* Black border */
+	margin:1px; 	/* "Air" */
+	float:left;		
+}
+.graphLabels .label{	/* Help text, , e.g.: Below 18.5: Underweight */		
+	width:143px;	/* Width */
+	height:14px;	/* Height */
+	font-size:0.8em;	/* Font size */
+	padding-left:2px;	/* Space at the left of label */
+	float:left;
+	border:1px solid #FFFFFF;
+}
+
+.barContainer{	/* DIV for both the multicolor bar and users weight bar */
+	position:absolute;
+	bottom:0px;
+	border:1px solid #000;
+	border-bottom:0px;
+	text-align:center;
+	vertical-align:middle;
+}
+.barContainer div{	/* colored div inside "barContainer */
+	border-bottom:1px solid #000;
+}
+.barContainer .labelSpan{	/* Label indicating users BMI */
+	background-color:#FFF;	/* White BG */
+	border:1px solid #000;	/* Black border */
+	padding:1px;	/* "Air" inside the box */
+	font-size:0.8em;	/* Font size */
+}

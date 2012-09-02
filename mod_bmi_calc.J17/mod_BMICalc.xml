@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7.0"
+	client="site"
+	method="upgrade">
+	<name>BMI Calculator</name>
+	<author>Theo van der Sluijs</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>(C) 2012 Theo van der Sluijs / IamboredsoIblog.eu</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@IamboredsoIblog.eu</authorEmail>
+	<authorUrl>www.IamboredsoIblog.eu</authorUrl>
+	<version>2.16.0</version>
+	<description>A nice Javascript driven BMI Calculator with Graph</description>
+	<files>
+		<filename module="mod_BMICalc">mod_BMICalc.php</filename>
+		<filename>mod_BMICalc.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/style.css</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+        <!-- Any language files included with the module -->
+        <language tag="en-GB">en-GB.mod_BMICalc.ini</language>
+    </languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="unit" type="list" default="1" label="Choose Unit" description="Select a unit, or let the user select">
+				<option value="standard">US</option>
+				<option value="metric">METRIC</option>
+				<option value="u">User pick</option>
+			</field>
+			<field name="sex" type="list" default="1" label="Choose sex" description="Select a sex, or let the user select">
+				<option value="m">MALE</option>
+				<option value="f">FEMALE</option>
+				<option value="u">User pick</option>
+			</field>		
+			<field name="graph" type="list" default="1" label="Show graph" description="Show or hide the graph">
+				<option value="1">show</option>
+				<option value="0">hide</option>
+			</field>		
+			<field name="Blink" type="list" default="0" label="Show Backlink" description="Show a backlink to IamBoredsoIblog.eu">
+				<option value="0">Yes</option> 
+				<option value="1">No</option> 
+			</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
